@@ -1,14 +1,8 @@
-# Your Name Here
+# Forrest Siminoe
 # UWYO COSC 1010
-# Submission Date
+# 10/6/2024
 # Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
-
-
+# Lab Section: 13
 
 # This is your second lab section. It will primarily be about working with lists
 # Complete all sections of this assignment 
@@ -99,7 +93,29 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+#for avgmintemp in min_temps:
+#    avgmintemp = sum(min_temps) / len(min_temps)
+#print(avgmintemp)
+
+#for avgmaxtemp in max_temps:
+#    avgmaxtemp = sum(max_temps) / len(max_temps)
+#print(avgmaxtemp)
+
+mintemptotal = 0
+for temps in min_temps:
+    mintemptotal += temps
+print(mintemptotal/len(min_temps))
+
+maxtemptotal = 0
+for temp in max_temps:
+    maxtemptotal += temp
+print(maxtemptotal/len(max_temps))
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+print("The hotest day was",max(max_temps),"and the coldest day was", min(min_temps))
+
+
+
 
 
